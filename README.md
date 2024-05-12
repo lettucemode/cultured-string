@@ -1,3 +1,3 @@
 # cultured-string
 
-![Ah, I see you're a string of culture as well.](string-of-culture.png)
+<img src="string-of-culture.png" width="512" alt="Ah, I see you're a string of culture as well.">

@@ -4,14 +4,12 @@ using System.Text;
 namespace cultured_string;
 
 public class CulturedString(string s, CultureInfo cultureInfo) {
-    private readonly string _s = s;
+    private readonly string _s = s.ToString(cultureInfo);
     private readonly CultureInfo _cultureInfo = cultureInfo;
 
     public CulturedString(string s): this(s, CultureInfo.InvariantCulture) {}
 
-    public string RenderToCulture() {
-        return _s.ToString(_cultureInfo);
-    }
+    public static implicit operator string(CulturedString cs) => cs._s;
 
     public string RenderToCulture(CultureInfo toCulture) {
         return _s.ToString(_cultureInfo).ToString(toCulture);
