@@ -1,2 +1,3 @@
 # cultured-string
-It's like a UTC string
+
+![Ah, I see you're a string of culture as well.](string-of-culture.png)
