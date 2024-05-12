@@ -12,7 +12,7 @@ public class CulturedString(string s, CultureInfo cultureInfo) {
     public static implicit operator string(CulturedString cs) => cs._s;
 
     public string RenderToCulture(CultureInfo toCulture) {
-        return _s.ToString(_cultureInfo).ToString(toCulture);
+        return _s.ToString(toCulture);
     }
     
     public static CulturedString Deserialize(string s) {
